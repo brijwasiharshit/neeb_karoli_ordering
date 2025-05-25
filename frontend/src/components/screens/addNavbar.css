@@ -1,0 +1,24 @@
+.navbar {
+  padding: 16px;
+  background-color: #333;
+  display: flex;
+  gap: 20px;
+}
+
+.navlink {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.navlink:hover {
+  background-color: #444;
+}
+
+.navlink.active {
+  color: yellow;
+  font-weight: bold;
+  background-color: #555;
+}
