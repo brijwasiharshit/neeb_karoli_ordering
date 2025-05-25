@@ -13,7 +13,7 @@ export default function Footer() {
       <div className="footer-content">
         {/* Logo & Tagline */}
         <div className="footer-section">
-          <h2 className="brand-name">Baba neem karoli restro and cafe 🍽️</h2>
+          <h2 className="brand-name">Baba neeb karoli restro and cafe 🍽️</h2>
           <p className="tagline">Bringing flavors to your doorstep!</p>
         </div>
 
@@ -73,7 +73,7 @@ export default function Footer() {
 
       {/* Copyright */}
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Baba neem karoli restro and cafe | All Rights Reserved.</p>
+        <p>© {new Date().getFullYear()} Baba neeb karoli restro and cafe | All Rights Reserved.</p>
       </div>
     </footer>
   );

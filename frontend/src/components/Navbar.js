@@ -17,7 +17,7 @@ export default function Navbar({ toggleDarkMode, darkMode }) {
       <div className="container-fluid">
         {/* Logo Image Instead of 'Variety' Text */}
         <Link className="navbar-brand fs-1" to="/">
-          <img src='https://i.postimg.cc/GpwjzDPt/neem-Karoli.jpg' alt="Logo" className="nav-logo" />
+          <img src='https://i.postimg.cc/GpwjzDPt/neeb-Karoli.jpg' alt="Logo" className="nav-logo" />
         </Link>
 
         <button

@@ -203,7 +203,7 @@ const Front = () => {
     return (
       <div className={classes.container}>
         <div className={classes.content}>
-          <h1 className={classes.title}>Baba neem karoli restro and cafe Lounge</h1>
+          <h1 className={classes.title}>Baba neeb karoli restro and cafe Lounge</h1>
           <p className={classes.loadingMessage}>Preparing your experience...</p>
         </div>
       </div>
@@ -214,7 +214,7 @@ const Front = () => {
     return (
       <div className={classes.container}>
         <div className={classes.content}>
-          <h1 className={classes.title}>Baba neem karoli restro and cafe Lounge</h1>
+          <h1 className={classes.title}>Baba neeb karoli restro and cafe Lounge</h1>
           <p className={classes.errorMessage}>{error}</p>
           <p className={classes.fallbackMessage}>Default tables loaded</p>
         </div>

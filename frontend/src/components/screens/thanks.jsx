@@ -16,7 +16,7 @@ const Thanks = () => {
     <div style={styles.container}>
       <div style={styles.card}>
         <div style={styles.header}>
-          <h1 style={styles.title}>Baba neem karoli restro and cafe</h1>
+          <h1 style={styles.title}>Baba neeb karoli restro and cafe</h1>
           <div style={styles.divider}></div>
         </div>
 

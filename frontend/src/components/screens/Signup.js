@@ -50,7 +50,7 @@ export default function Signup() {
         className="card border-warning shadow-lg p-4 bg-light text-dark"
         style={{ width: "400px" }}
       >
-        <h2 className="text-center text-warning mb-4"> Baba neem karoli restro and cafe Signup </h2>{" "}
+        <h2 className="text-center text-warning mb-4"> Baba neeb karoli restro and cafe Signup </h2>{" "}
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <label htmlFor="email" className="form-label">

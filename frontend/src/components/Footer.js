@@ -8,8 +8,8 @@ export default function Footer() {
       <div className="footer-container">
         {/* Logo & Name */}
         <div className="footer-logo">
-          <img src="https://i.postimg.cc/GpwjzDPt/neem-Karoli.jpg" alt="Logo" />
-          <h2>Baba neem karoli restro and cafe</h2>
+          <img src="https://i.postimg.cc/GpwjzDPt/neeb-Karoli.jpg" alt="Logo" />
+          <h2>Baba neeb karoli restro and cafe</h2>
         </div>
 
         {/* Navigation Links */}
@@ -36,7 +36,7 @@ export default function Footer() {
 
       {/* Copyright */}
       <div className="footer-bottom">
-        <p>© 2025 Baba neem karoli restro and cafe | All Rights Reserved</p>
+        <p>© 2025 Baba neeb karoli restro and cafe | All Rights Reserved</p>
       </div>
     </footer>
   );
