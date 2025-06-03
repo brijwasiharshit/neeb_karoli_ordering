@@ -156,7 +156,8 @@ export default function Home() {
 
   const filteredItems = foodItems.filter(
     (item) =>
-      item?.name?.toLowerCase().includes(searchQuery.toLowerCase())
+      item?.name?.toLowerCase().includes(searchQuery.toLowerCase()) &&
+      item.category?._id === activeCategory
   );
 
   return (
@@ -188,7 +189,6 @@ export default function Home() {
           </div>
 
           <div className="menu-container">
-<<<<<<< HEAD
             {foodCategories
               .filter((category) => category._id === activeCategory)
               .map((category) => (
@@ -222,83 +222,11 @@ export default function Home() {
                               ))}
                           </div>
                         </div>
-=======
-            {searchQuery.length > 0 ? (
-              // Show all matching search results regardless of category
-              <div className="food-items-grid">
-                {filteredItems.map((item) => (
-                  <div key={item._id} className="food-item-card">
-                    {item.imageUrl && (
-                      <img
-                        src={item.imageUrl}
-                        alt={item.name}
-                        className="food-item-image"
-                      />
-                    )}
-                    <div className="food-item-details">
-                      <h3>{item.name}</h3>
-                      <div className="price-options">
-                        {item.options &&
-                          Object.entries(item.options).map(([option, price]) => (
-                            <div key={option} className="price-option">
-                              <span>{option}: ₹{price}</span>
-                              <button
-                                onClick={() => addToCart(item, option, price)}
-                                className="add-to-cart-btn"
-                              >
-                                Add
-                              </button>
-                            </div>
-                          ))}
->>>>>>> 374a55928e187cea0e74efe1bc1cf875bc992522
                       </div>
-                    </div>
+                    ))}
                   </div>
-                ))}
-              </div>
-            ) : (
-              // Show category-wise items when not searching
-              foodCategories
-                .filter((category) => category._id === activeCategory)
-                .map((category) => (
-                  <div key={category._id} className="category-section">
-                    <h2 className="category-title">{category.name}</h2>
-                    <p className="category-description">{category.description}</p>
-                    <div className="food-items-grid">
-                      {foodItems
-                        .filter((item) => item.category._id === category._id)
-                        .map((item) => (
-                          <div key={item._id} className="food-item-card">
-                            {item.imageUrl && (
-                              <img
-                                src={item.imageUrl}
-                                alt={item.name}
-                                className="food-item-image"
-                              />
-                            )}
-                            <div className="food-item-details">
-                              <h3>{item.name}</h3>
-                              <div className="price-options">
-                                {item.options &&
-                                  Object.entries(item.options).map(([option, price]) => (
-                                    <div key={option} className="price-option">
-                                      <span>{option}: ₹{price}</span>
-                                      <button
-                                        onClick={() => addToCart(item, option, price)}
-                                        className="add-to-cart-btn"
-                                      >
-                                        Add
-                                      </button>
-                                    </div>
-                                  ))}
-                              </div>
-                            </div>
-                          </div>
-                        ))}
-                    </div>
-                  </div>
-                ))
-            )}
+                </div>
+              ))}
           </div>
 
           <button className="cart-button" onClick={() => setShowCart(true)}>
@@ -415,9 +343,5 @@ export default function Home() {
       )}
     </div>
   );
-<<<<<<< HEAD
 }
 
-=======
-}
->>>>>>> 374a55928e187cea0e74efe1bc1cf875bc992522
