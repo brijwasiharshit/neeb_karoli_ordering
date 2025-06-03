@@ -9,8 +9,7 @@ const port = process.env.PORT || 5000;
 // ✅ Connect to MongoDB
 mongoDB();
 app.use(cors({
-  // origin: ["http://localhost:3000"],
-  ["https://neeb-karoli-ordering-frontend.onrender.com"], 
+  origin: ["https://neeb-karoli-ordering-frontend.onrender.com"],
   credentials: true
 }));
 app.use(express.json());
