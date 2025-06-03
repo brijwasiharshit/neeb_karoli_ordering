@@ -156,8 +156,7 @@ export default function Home() {
 
   const filteredItems = foodItems.filter(
     (item) =>
-      item?.name?.toLowerCase().includes(searchQuery.toLowerCase()) &&
-      item.category?._id === activeCategory
+      item?.name?.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   return (
