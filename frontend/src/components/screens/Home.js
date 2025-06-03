@@ -193,8 +193,8 @@ export default function Home() {
               .filter((category) => category._id === activeCategory)
               .map((category) => (
                 <div key={category._id} className="category-section">
-                  <h2 className="category-title">{category.name}</h2>
-                  <p className="category-description">{category.description}</p>
+                  {/* <h2 className="category-title">{category.name}</h2>
+                  <p className="category-description">{category.description}</p> */}
                   <div className="food-items-grid">
                     {filteredItems.map((item) => (
                       <div key={item._id} className="food-item-card">

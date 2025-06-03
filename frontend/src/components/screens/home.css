@@ -249,7 +249,7 @@
 .category-tabs-container {
     width: 100%;
     overflow-x: auto;
-    padding: 10px 0;
+    padding: 2px 0;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: sticky;
@@ -259,13 +259,13 @@
 
 .category-tabs {
     display: flex;
-    gap: 8px;
+    gap: 5px;
     padding: 0 10px;
     min-width: max-content;
 }
 
 .category-tab {
-    padding: 8px 16px;
+    padding: 8px 2px;
     border: none;
     border-radius: 20px;
     background-color: #f5f5f5;
@@ -362,12 +362,12 @@
 /* Responsive adjustments */
 @media (min-width: 768px) {
     .category-tabs {
-        justify-content: center;
+          justify-content: center;
         gap: 15px;
     }
     
     .category-tab {
-        padding: 10px 20px;
+       padding: 10px 20px;
         font-size: 16px;
     }
     
@@ -395,16 +395,18 @@
 }
 .category-tabs-container {
   padding: 1rem;
-  background: #f9f9f9;
+   background: #f9f9f9;
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1px;
+  margin-top: 0px;
+
 }
 
 .category-tabs {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  /* gap: 0.75rem; */
   justify-content: center;
 }
 
@@ -427,9 +429,9 @@
 }
 
 .category-tab.active {
-  background-color: #4f46e5; /* Indigo */
+  background-color: #FF9800;
   color: #ffffff;
-  border-color: #4f46e5;
+    background-color: #FF9800;
   font-weight: 600;
   box-shadow: 0
 }
@@ -799,7 +801,7 @@
   
   /* Cart Summary */
   .modern-cart-summary {
-    padding: 16px;
+    padding: 1px;
     background: #f8fafc;
     border-top: 1px solid #e2e8f0;
   }
@@ -1333,11 +1335,11 @@
   background-color: #f9f9f9;
   border-radius: 10px;
   padding: 15px;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .customer-info-form h3 {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 1.1rem;
 }
 
@@ -1347,7 +1349,7 @@
 
 .customer-info-form label {
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
   font-size: 0.9rem;
 }
 
@@ -1371,7 +1373,7 @@
 
 /* Place order button */
 .cart-actions {
-  margin-top: 20px;
+  margin-top: 5px;
   text-align: center;
 }
 
@@ -1453,7 +1455,7 @@
 .item-controls {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
 }
 
 .item-controls button {
@@ -1500,7 +1502,7 @@
   background: white;
   border-radius: 20px;
   padding: 28px;
-  margin: 24px 0;
+  margin: 10px 0;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(0, 0, 0, 0.03);
 }
@@ -1526,7 +1528,7 @@
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .customer-info-form.small-form label {
@@ -1577,7 +1579,7 @@
 
 /* Place Order Button */
 .cart-actions {
-  margin-top: 32px;
+  margin-top: 10px;
   text-align: center;
 }
 
